@@ -86,21 +86,34 @@ class ShrinkageCalculatorViewController: UIViewController, UITextFieldDelegate, 
     
     func doCalculation() {
         
-        let array = heightInput.text?.components(separatedBy: ".")
+        // Slider
+        sliderAmount = Int(sliderValue.value)
+        sliderPercentageLabel.text = String(sliderAmount) + " %"
         
-        if (array?.count)! <= 2 {
         
-            // Slider
-            sliderAmount = Int(sliderValue.value)
-            sliderPercentageLabel.text = String(sliderAmount) + " %"
+        // Height Calculation
+        let heightArray = heightInput.text?.components(separatedBy: ".")
+        
+        if (heightArray?.count)! <= 2 {
             
-            // Height Calculation
             if heightInput.text != ""  {
                 heightAmount = Double(heightInput.text!)!
                 heightOutput.text = String(format: "%.2f", heightAmount / ( 1 - ( Double(sliderAmount) / 100 ) ) )
             } else {
                 heightOutput.text = String("0")
             }
+            
+        } else {
+            
+            heightInput.deleteBackward()
+            jiggleTextField(view: self.heightInput, amount: 5.0)
+            
+        }
+        
+        // Width Calculation
+        let widthArray = widthInput.text?.components(separatedBy: ".")
+        
+        if (widthArray?.count)! <= 2 {
             
             // Width Calculation
             if widthInput.text != ""  {
@@ -112,17 +125,15 @@ class ShrinkageCalculatorViewController: UIViewController, UITextFieldDelegate, 
                 widthOutput.text = String("0")
             }
             
-            sliderPercentageLabel.text = String(Int(sliderValue.value) ) + " %"
-            
-            print("yes")
-            
         } else {
             
-            heightInput.deleteBackward()
-            
-            jiggleTextField(view: self.heightInput, amount: 5.0)
+            widthInput.deleteBackward()
+            jiggleTextField(view: self.widthInput, amount: 5.0)
             
         }
+            
+        
+
 
     }
     
