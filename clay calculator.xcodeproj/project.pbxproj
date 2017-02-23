@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3083DF471E16F304009AEB1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083DF461E16F304009AEB1E /* AppDelegate.swift */; };
-		3083DF491E16F304009AEB1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083DF481E16F304009AEB1E /* ViewController.swift */; };
 		3083DF4C1E16F304009AEB1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3083DF4A1E16F304009AEB1E /* Main.storyboard */; };
 		3083DF4E1E16F304009AEB1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3083DF4D1E16F304009AEB1E /* Assets.xcassets */; };
 		3083DF511E16F304009AEB1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3083DF4F1E16F304009AEB1E /* LaunchScreen.storyboard */; };
 		3083DF5C1E16F304009AEB1E /* clay_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083DF5B1E16F304009AEB1E /* clay_calculatorTests.swift */; };
 		3083DF671E16F304009AEB1E /* clay_calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083DF661E16F304009AEB1E /* clay_calculatorUITests.swift */; };
+		3083DF761E16F4EA009AEB1E /* ShrinkageCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083DF751E16F4EA009AEB1E /* ShrinkageCalculatorViewController.swift */; };
+		3093F15A1E19C61C004267E5 /* DINOT-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3093F1551E19C604004267E5 /* DINOT-Black.otf */; };
+		3093F15B1E19C61C004267E5 /* DINOT-CondBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3093F1561E19C604004267E5 /* DINOT-CondBold.otf */; };
+		3093F15C1E19C61C004267E5 /* DINOT-CondRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3093F1571E19C604004267E5 /* DINOT-CondRegular.otf */; };
+		3093F15D1E19C61C004267E5 /* DINOT-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3093F1581E19C604004267E5 /* DINOT-Medium.otf */; };
+		3093F15E1E19C61C004267E5 /* DINOT-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3093F1591E19C604004267E5 /* DINOT-Regular.otf */; };
+		3093F1AE1E19D523004267E5 /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3093F1AD1E19D523004267E5 /* Keyboard.xib */; };
+		3093F1B01E19D633004267E5 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3093F1AF1E19D633004267E5 /* Keyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,6 @@
 /* Begin PBXFileReference section */
 		3083DF431E16F304009AEB1E /* clay calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "clay calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3083DF461E16F304009AEB1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3083DF481E16F304009AEB1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3083DF4B1E16F304009AEB1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3083DF4D1E16F304009AEB1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3083DF501E16F304009AEB1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,14 @@
 		3083DF621E16F304009AEB1E /* clay calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "clay calculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3083DF661E16F304009AEB1E /* clay_calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clay_calculatorUITests.swift; sourceTree = "<group>"; };
 		3083DF681E16F304009AEB1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3083DF751E16F4EA009AEB1E /* ShrinkageCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrinkageCalculatorViewController.swift; sourceTree = "<group>"; };
+		3093F1551E19C604004267E5 /* DINOT-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINOT-Black.otf"; sourceTree = "<group>"; };
+		3093F1561E19C604004267E5 /* DINOT-CondBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINOT-CondBold.otf"; sourceTree = "<group>"; };
+		3093F1571E19C604004267E5 /* DINOT-CondRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINOT-CondRegular.otf"; sourceTree = "<group>"; };
+		3093F1581E19C604004267E5 /* DINOT-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINOT-Medium.otf"; sourceTree = "<group>"; };
+		3093F1591E19C604004267E5 /* DINOT-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINOT-Regular.otf"; sourceTree = "<group>"; };
+		3093F1AD1E19D523004267E5 /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Keyboard.xib; path = ../Keyboard.xib; sourceTree = "<group>"; };
+		3093F1AF1E19D633004267E5 /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +111,19 @@
 		3083DF451E16F304009AEB1E /* clay calculator */ = {
 			isa = PBXGroup;
 			children = (
+				3083DF741E16F490009AEB1E /* ViewControllers */,
 				3083DF461E16F304009AEB1E /* AppDelegate.swift */,
-				3083DF481E16F304009AEB1E /* ViewController.swift */,
 				3083DF4A1E16F304009AEB1E /* Main.storyboard */,
 				3083DF4D1E16F304009AEB1E /* Assets.xcassets */,
 				3083DF4F1E16F304009AEB1E /* LaunchScreen.storyboard */,
+				3093F1551E19C604004267E5 /* DINOT-Black.otf */,
+				3093F1561E19C604004267E5 /* DINOT-CondBold.otf */,
+				3093F1571E19C604004267E5 /* DINOT-CondRegular.otf */,
+				3093F1581E19C604004267E5 /* DINOT-Medium.otf */,
+				3093F1591E19C604004267E5 /* DINOT-Regular.otf */,
 				3083DF521E16F304009AEB1E /* Info.plist */,
+				3093F1AD1E19D523004267E5 /* Keyboard.xib */,
+				3093F1AF1E19D633004267E5 /* Keyboard.swift */,
 			);
 			path = "clay calculator";
 			sourceTree = "<group>";
@@ -123,6 +144,14 @@
 				3083DF681E16F304009AEB1E /* Info.plist */,
 			);
 			path = "clay calculatorUITests";
+			sourceTree = "<group>";
+		};
+		3083DF741E16F490009AEB1E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3083DF751E16F4EA009AEB1E /* ShrinkageCalculatorViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,11 +217,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Jeff Rauch";
 				TargetAttributes = {
 					3083DF421E16F304009AEB1E = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 4S6P8ENA43;
 						ProvisioningStyle = Automatic;
 					};
 					3083DF561E16F304009AEB1E = {
@@ -232,6 +262,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3093F1AE1E19D523004267E5 /* Keyboard.xib in Resources */,
+				3093F15A1E19C61C004267E5 /* DINOT-Black.otf in Resources */,
+				3093F15B1E19C61C004267E5 /* DINOT-CondBold.otf in Resources */,
+				3093F15C1E19C61C004267E5 /* DINOT-CondRegular.otf in Resources */,
+				3093F15D1E19C61C004267E5 /* DINOT-Medium.otf in Resources */,
+				3093F15E1E19C61C004267E5 /* DINOT-Regular.otf in Resources */,
 				3083DF511E16F304009AEB1E /* LaunchScreen.storyboard in Resources */,
 				3083DF4E1E16F304009AEB1E /* Assets.xcassets in Resources */,
 				3083DF4C1E16F304009AEB1E /* Main.storyboard in Resources */,
@@ -259,7 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3083DF491E16F304009AEB1E /* ViewController.swift in Sources */,
+				3083DF761E16F4EA009AEB1E /* ShrinkageCalculatorViewController.swift in Sources */,
+				3093F1B01E19D633004267E5 /* Keyboard.swift in Sources */,
 				3083DF471E16F304009AEB1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +370,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -382,6 +420,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -410,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4S6P8ENA43;
 				INFOPLIST_FILE = "clay calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffrauch.clay-calculator";
@@ -422,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4S6P8ENA43;
 				INFOPLIST_FILE = "clay calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffrauch.clay-calculator";
@@ -503,6 +544,7 @@
 				3083DF6D1E16F304009AEB1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3083DF6E1E16F304009AEB1E /* Build configuration list for PBXNativeTarget "clay calculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +553,7 @@
 				3083DF701E16F304009AEB1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3083DF711E16F304009AEB1E /* Build configuration list for PBXNativeTarget "clay calculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +562,7 @@
 				3083DF731E16F304009AEB1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
