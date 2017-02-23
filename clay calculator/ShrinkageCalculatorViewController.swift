@@ -18,12 +18,6 @@ class ShrinkageCalculatorViewController: UIViewController, UITextFieldDelegate, 
     @IBOutlet weak var sliderValue: UISlider!
     @IBOutlet weak var sliderPercentageLabel: UILabel!
     
-    // variables
-    var heightAmount = Double()
-    var widthAmount = Double()
-    var sliderAmount = Int()
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -82,13 +76,19 @@ class ShrinkageCalculatorViewController: UIViewController, UITextFieldDelegate, 
     @IBAction func widthValueChanged(_ sender: Any) {
         doCalculation()
     }
-
     
+
     func doCalculation() {
+        
+        // variables
+        var heightAmount = Double()
+        var widthAmount = Double()
+        var sliderAmount = Int()
         
         // Slider
         sliderAmount = Int(sliderValue.value)
         sliderPercentageLabel.text = String(sliderAmount) + " %"
+        
         
         
         // Height Calculation
@@ -97,7 +97,7 @@ class ShrinkageCalculatorViewController: UIViewController, UITextFieldDelegate, 
         if (heightArray?.count)! <= 2 {
             
             if heightInput.text != ""  {
-                heightAmount = Double(heightInput.text!)!
+                heightAmount = Double(heightInput.text!) ?? 0
                 heightOutput.text = String(format: "%.2f", heightAmount / ( 1 - ( Double(sliderAmount) / 100 ) ) )
             } else {
                 heightOutput.text = String("0")
@@ -117,7 +117,7 @@ class ShrinkageCalculatorViewController: UIViewController, UITextFieldDelegate, 
             
             // Width Calculation
             if widthInput.text != ""  {
-                widthAmount = Double(widthInput.text!)!
+                widthAmount = Double(widthInput.text!) ?? 0
                 widthOutput.text = String(format: "%.2f", widthAmount / ( 1 - ( Double(sliderAmount) / 100 ) ) )
                 // widthOutput.minimumScaleFactor: 10
                 // widthOutput.adjustsFontSizeToFitWidth: true
@@ -131,12 +131,11 @@ class ShrinkageCalculatorViewController: UIViewController, UITextFieldDelegate, 
             jiggleTextField(view: self.widthInput, amount: 5.0)
             
         }
-            
         
-
 
     }
     
+    //Stolen from Alex
     
     func jiggleTextField(view: UIView, amount: CGFloat) {
         UIView.animate(withDuration: 0.02, delay: 0, options: [.curveEaseInOut], animations: {
